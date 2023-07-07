@@ -32,7 +32,7 @@ class Node_Upsample(Model):
             if sample_factor:
                 inputs[i] = UpSampling2D(size = (1, sample_factor),
                                          interpolation ='bilinear')(inputs[i])
-        # fast normalize fusion
+        # weighted average
         w_ave = self.w_ave(inputs)
         # convolution
         w_conv = self.conv(w_ave)
@@ -55,7 +55,7 @@ class Node_Downsample(Node_Upsample):
             if sample_factor:
                 inputs[i] = MaxPooling2D(pool_size=(1, sample_factor), 
                                            data_format='channels_last')(inputs[i])
-        # fast normalize fusion
+        # weighted average
         w_ave = self.fusion(inputs)
         # convolution
         w_conv = self.conv(w_ave)
@@ -79,7 +79,7 @@ class Node_Downsample_Upsample(Node_Upsample):
                 downsample_factor = int(inputs[2].shape[2] / final_shape)
                 inputs[1] = MaxPooling2D(pool_size=(1, sample_factor), data_format='channels_last')(inputs[1])
 
-        # fast normalize fusion
+        # weighted average
         w_ave = self.fusion(inputs)
         # convolution
         w_conv = self.conv(w_ave)
