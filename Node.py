@@ -1,28 +1,11 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Layer, SeparableConv2D, Conv2D, MaxPooling2D, AveragePooling2D, UpSampling2D, BatchNormalization
+from Weighted_Average_Layer import Weighted_Average
 from tensorflow.keras.models import Model
-
-# Weighted Average Layer
-class Weighted_Average(Layer):
-    def __init__(self, num_inputs):
-        super(Weighted_Average, self).__init__()
-        self.num_inputs = num_inputs
-
-    def build(self, input_shapes):
-        w_init = tf.random_normal_initializer()
-        self.w = tf.Variable(name = 'weight',
-                             initial_value = w_init(shape=(1, len(input_shapes)),
-                             dtype='float32'),
-                             trainable = True)
-
-    def call(self, inputs):
-        weighted_inputs = tf.tensordot(inputs, self.w[0], axes=1)
-        den = tf.reduce_sum(self.w) + 0.0001
-        return tf.divide(weighted_inputs, den)
 
 # Node performs resampling, weighted averaging, convolution, batch normalization
 # Node is split into Node_Upsample, Node_Downsample, Node_Downsample_Upsample
-# this is to reduce redundant logic during training process
+# this is to reduce repetitive operations during training process
 
 class Node_Upsample(Model):
     def __init__(self, f, k, num_inputs=2):        
