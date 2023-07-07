@@ -3,7 +3,6 @@ import tensorflow as tf
 from tensorflow.keras.layers import Conv2D, SeparableConv2D
 from tensorflow.keras.models import Model
 
-
 class BiFPN(Model):
     def __init__(self, f, k, last=True):
         super(BiFPN, self).__init__()
