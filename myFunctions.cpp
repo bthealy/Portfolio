@@ -1,6 +1,9 @@
 #include "myFunctions.h"
 #include "globals.h" // Import the global variables
 
+LSM303 compass;
+Servo myservo;
+
 void setupHardware() {
   myservo.attach(servoPin);
   pinMode(solenoidPin, OUTPUT);
@@ -9,35 +12,35 @@ void setupHardware() {
   Wire.begin();
   compass.init();
   compass.enableDefault();
-  compass.m_min = (LSM303::vector<int16_t>){-1949, -4200, +12589};
-  compass.m_max = (LSM303::vector<int16_t>){-1471, -3275, +12884};
+  compass.m_min = { -1949, -4200, +12589 };
+  compass.m_max = { -1471, -3275, +12884 };
   myservo.write(startingPos);
 }
 
 // Inline small functions for performance improvement
 inline uint8_t fastDigitalRead(uint8_t pin) {
-  return (uint8_t)digitalRead(pin);
+  return digitalRead(pin);
 }
 
-void reed_switch() {
-  static uint8_t previousSwitchState = 0; // Move to a static local variable
-  uint8_t SwitchState = fastDigitalRead(switchPin); // Use a local variable instead
+void reedSwitch() {
+  static uint8_t previousSwitchState = 0;
+  uint8_t switchState = fastDigitalRead(switchPin);
 
-  if (previousSwitchState != SwitchState) {
-    if (SwitchState == 0) { // magnet has been detected
+  if (previousSwitchState != switchState) {
+    if (switchState == LOW) { // Magnet has been detected
       distanceTraveled += circ;
       Serial.print("Distance Traveled (ft): ");
-      Serial.println(distanceTraveled / 12); // distance traveled in ft
+      Serial.println(distanceTraveled / 12); // Distance traveled in feet
     }
-    previousSwitchState = SwitchState;
+    previousSwitchState = switchState;
   }
 }
 
 void magnetometer() {
   compass.read();
   uint16_t heading = compass.heading();
-  uint16_t filterHeading = (a * heading + (100 - a) * previousFilterHeading) / 100; // Use a local variable
-  previousFilterHeading = filterHeading; // Update the global variable
+  uint16_t filteredHeading = (a * heading + (100 - a) * previousFilterHeading) / 100;
+  previousFilterHeading = filteredHeading;
 }
 
 void servoControl() {
