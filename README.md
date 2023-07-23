@@ -9,4 +9,4 @@ Propulsion - Pneumatic cylinder and solenoid valve push robot forward <br />
 Direction tracking - Magnetometer heading returns orientation similar to compass <br />
 Distance tracking  - Reed switch tracked number of wheel rotations <br />
 
-[![Demonstration]([https://i.stack.imgur.com/Vp2cE.png](https://youtube.com/shorts/y1Mx7Z-qZLc?feature=share))]([https://youtu.be/vt5fpE0bzSY])
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)]([https://www.youtube.com/watch?v=ek1j272iAmc](https://youtube.com/shorts/y1Mx7Z-qZLc?feature=share)https://youtube.com/shorts/y1Mx7Z-qZLc?feature=share)
