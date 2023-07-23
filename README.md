@@ -6,8 +6,17 @@ The goal for students was to create a robot that travels straight a certain dist
 Demonstration:
 https://drive.google.com/file/d/1cdRi_YOMGCwp0VcparbAZbSs_ZBniHbV/view?usp=drive_link
 
-Controls   - Arduino microcontroller <br />
-Steering   - Parallel steering mechanism with servo motor actuator controlled by PID <br />
-Propulsion - Pneumatic cylinder and solenoid valve push robot forward <br />
-Direction tracking - Magnetometer heading returns orientation similar to compass <br />
-Distance tracking  - Reed switch tracked number of wheel rotations <br />
+### Controls
+Arduino microcontroller <br />
+
+### Steering
+Parallel steering mechanism with servo motor actuator controlled by PID <br />
+
+### Propulsion
+Pneumatic cylinder and solenoid valve push robot forward <br />
+
+### Direction Tracking
+Magnetometer heading returns orientation similar to compass <br />
+
+### Distance tracking
+Reed switch tracked number of wheel rotations <br />
