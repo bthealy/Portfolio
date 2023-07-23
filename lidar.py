@@ -5,9 +5,6 @@ import rospy
 from std_msgs.msg import String
 import cv2
 
-# global variable required to save data from ROS subscriber
-data_block = None
-
 class lidar:
     def __init__(self):
         # angle of sensors in lidar array
@@ -31,7 +28,7 @@ class lidar:
         # list of num_sensor dictionaries
         self.distance_history = {}
 
-
+    
     def decode_output(self, data_block):
         # raw data in hex retrieved from ROS node
         data_block = data_block.split(" ")
@@ -124,7 +121,7 @@ class lidar:
             self.decode_output()
             self.distances_to_polar_coordinates()
 
-            # publish coordinates to ROS
+            # publish coordinates, edges, etc. to ROS
             self.pub.publish(f"{self.distance_history}")
             self.r.sleep()
 
