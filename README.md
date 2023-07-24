@@ -23,20 +23,20 @@ The weighted average output tensor is then further processed with another convol
 
 The features extracted from the previous steps are then normalized to improve robustness.
 
-<img src="FA Images/Node_Diagram.jpg" width="400">
+<img src="Images/Node_Diagram.jpg" width="400">
 
 ## Full Feature Aggregation Submodels
 The final aggregation sub-architectures consist of multiple nodes, aggregating extracted features from many scales and finally outputting one or more node outputs to the head (or prediction stage) of the neural network.
 
 Example FA submodels:
 
-<img src="FA Images/PANet.jpg" width="400">
+<img src="Images/PANet.jpg" width="400">
 
 
-<img src="FA Images/BiFPN.jpg" width="400">
+<img src="Images/BiFPN.jpg" width="400">
 
 
-<img src="FA Images/SEN.png" width="400">
+<img src="Images/SEN.png" width="400">
 
 
 ## SELDnet with Feature Aggregation
