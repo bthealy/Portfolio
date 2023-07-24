@@ -30,12 +30,7 @@ The final aggregation sub-architectures consist of multiple nodes, aggregating e
 
 Example FA submodels:
 
-<img src="Images/PANet.jpg" width="300">
-
-
-<img src="Images/BiFPN.jpg" width="300">
-
-
+<img src="Images/PANet.jpg" width="300"><img src="Images/BiFPN.jpg" width="300">
 <img src="Images/SEN.png" width="300">
 
 
