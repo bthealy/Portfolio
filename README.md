@@ -6,7 +6,7 @@ The goal for students was to create a robot that travels straight a certain dist
 Demonstration:
 https://drive.google.com/file/d/1cdRi_YOMGCwp0VcparbAZbSs_ZBniHbV/view?usp=drive_link
 <br /><br />
-Controls - Arduino microcontroller <br /><br />
+Microcontroller - Arduino <br /><br />
 
 Steering - Parallel steering mechanism with servo motor actuator controlled by PID <br /><br />
 
