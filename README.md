@@ -37,7 +37,7 @@ Example FA submodels:
 
 ## SELDnet with Feature Aggregation
 SELDnet is an esteemed Sound Detection Neural Network (joint sound classification and localization). Here is an example of how the previous FA submodels can be integrated into such a model's architecutre.
-<img src="Images/SELDnet" width="500">
-<img src="Images/SELDnet + PANet.png" width="500">
-<img src="Images/SELDnet + BiFPN.png" width="500">
-<img src="Images/SELDnet + SEN.png" width="500">
+<img src="Images/SELDnet.png" width="600">
+<img src="Images/SELDnet + PANet.png" width="600">
+<img src="Images/SELDnet + BiFPN.png" width="600">
+<img src="Images/SELDnet + SEN.png" width="600">
