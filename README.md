@@ -20,5 +20,5 @@ Description: https://ncees.org/wp-content/uploads/2022/09/FE-Mechanical-CBT-spec
 
 ## Data Science Professional Certificate
 IBM <br />
-Description: https://www.coursera.org/professional-certificates/ibm-data-science?
+Description: https://www.coursera.org/professional-certificates/ibm-data-science
 
