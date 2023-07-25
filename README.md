@@ -1,8 +1,18 @@
-# Portfolio
-Projects, Certificates, Etc.
+# Portfolio - Brendan Healy
+This repository contains details on my certifications and projects. Please see individual branches for full descriptions.
 
-This repository contains details on the following projects:
+Certificates:
+- TensorFlow Advanced Techniques
+- SolidWorks Associate Certificate (CSWA)
+- Engineer in Training (EIT), Mechanical Engineering
+- IBM Data Science Professional
+
+Robotics Projects / Lab work:
+- Handheld Robotic Arm
+- Autonomous Vehicle
+- Velodyne Lidar Decoder / Edge Detector
+
+Machine Learning / AI Projects:
 - Deep Learning Feature Aggregation Library
-- 
-- Autonomous Vehicle 
 - Bellman-Ford Path Planner
+
