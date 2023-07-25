@@ -1,4 +1,4 @@
-To run my GA, run the run_GA.py file.
+To run GA, execute the run_GA.py file.
 
 It calls the GA_Library, then runs the GA with the preset parameters.
 Set the parameters for testing different combinations.
