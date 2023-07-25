@@ -16,5 +16,6 @@ Robotics Projects / Lab work:
 <br /><br />
 Machine Learning / AI Projects:
 - Deep Learning Feature Aggregation Library
+- Genetic Algorithm Neural Network Optimizer
 - Bellman-Ford Path Planner
-
+- Genetic Algorithm Path Planner
