@@ -1,6 +1,6 @@
 To run GA, execute the run_GA.py file.
 
-It calls the GA_Library, then runs the GA with the preset parameters.
+It calls GA.py, then runs the GA with the preset parameters from run_GA.py
 Set the parameters for testing different combinations.
 
 Output prints GA time, best distance, best chromosome, then saves the
