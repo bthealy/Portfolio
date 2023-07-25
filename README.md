@@ -1,6 +1,6 @@
 # Portfolio - Brendan Healy
 This repository contains details on my certifications and projects. Please see individual branches for full descriptions.
-<br />
+<br /><br />
 Certificates:
 - TensorFlow Advanced Techniques
 - SolidWorks Associate Certificate (CSWA)
