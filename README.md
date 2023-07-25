@@ -21,5 +21,5 @@ Machine Learning / AI Projects:
 - Genetic Algorithm Path Planner
 
 <br /><br />
-Computer Aided Design (CAD) Projects:
+Computer Aided Design (CAD) Projects:<br />
 See branch
