@@ -19,6 +19,7 @@ Machine Learning / AI Projects:
 - Genetic Algorithm Neural Network Optimizer
 - Bellman-Ford Path Planner
 - Genetic Algorithm Path Planner
+- Fuzzy Logic Stock Market Investor
 
 <br /><br />
 Computer Aided Design (CAD) Projects:
