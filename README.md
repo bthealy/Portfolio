@@ -21,5 +21,9 @@ Machine Learning / AI Projects:
 - Genetic Algorithm Path Planner
 
 <br /><br />
-Computer Aided Design (CAD) Projects:<br />
-See branch
+Computer Aided Design (CAD) Projects:
+- Robotic Walker Power Train
+- Helical & Planetary Gear Trains
+- Stratocaster Guitar
+- Miscellaneous competition CAD
+
