@@ -1,8 +1,3 @@
-# Portfolio
-Projects, Certificates, Etc.
+# Bellman-Ford Path Planner
 
-This repository contains details on the following projects:
-- Deep Learning Feature Aggregation Library
-- 
-- Autonomous Vehicle 
-- Bellman-Ford Path Planner
+This project is intended to demonstrate an ability to apply dynamic and graph algorithms to robotics and intelligent systems.
