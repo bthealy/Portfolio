@@ -14,9 +14,12 @@ Robotics Projects / Lab work:
 - Velodyne Lidar Decoder / Edge Detector
 
 <br /><br />
-Machine Learning / AI Projects:
+Machine Learning Projects:
 - Deep Learning Feature Aggregation Library
 - Genetic Algorithm Neural Network Optimizer
+
+<br /><br />
+Artificial Intelligence Projects:
 - Bellman-Ford Path Planner
 - Genetic Algorithm Path Planner
 - Fuzzy Logic Stock Market Investor
