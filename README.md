@@ -6,11 +6,11 @@ The robot navigates a contour map (numpy array format) with given start, end, an
 
 ## Example paths
 Example 1 <br />
-<img src="Images/bellman-ford example 1.png" width="800"> <br /><br />
+<img src="Images/bellman-ford example 1.png" width="1400"> <br /><br />
 Example 2 <br />
-<img src="Images/bellman-ford example 2.png" width="800"> <br /><br />
+<img src="Images/bellman-ford example 2.png" width="1400"> <br /><br />
 Example 3 <br />
-<img src="Images/bellman-ford example 3.png" width="800"> <br /><br />
+<img src="Images/bellman-ford example 3.png" width="1400"> <br /><br />
 Example 4 <br />
-<img src="Images/bellman-ford example 4.png" width="400"> <br /><br />
+<img src="Images/bellman-ford example 4.png" width="1400"> <br /><br />
 
