@@ -2,7 +2,7 @@
 
 This project is intended to demonstrate an ability to apply dynamic and graph algorithms to robotics and intelligent systems.
 
-The robot navigates a contour map (numpy array format) with given start, end, and obstacle coordinates. The cost for each location is a combination of Euclidean distance and impedance. Impedance is set as the elevation change between each coordinate on the contour map, but can easily be manipulated to add cost for factors such as terrain roughness. Additionally, limits on steepness traversability can be set to replicate re-world capabilities.
+The robot navigates a contour map (numpy array format) with given start, end, and obstacle coordinates. The cost for each location is a combination of Euclidean distance and impedance. Impedance is defined as the elevation change between each coordinate on the contour map, but can easily be manipulated to add cost for factors such as terrain roughness or turn radius. Additionally, limits on steepness can be set to replicate re-world traversability capabilities.
 
 ## Example paths
 Example 1 <br />
