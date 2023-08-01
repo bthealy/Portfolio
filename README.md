@@ -14,3 +14,14 @@ Example 3 <br />
 Example 4 <br />
 <img src="Images/bellman-ford example 4.png" width="1400"> <br /><br />
 
+## Script Descriptions
+run_bellman.py - Runs full process: returns path, cost, plots path on contour.<br />
+bellman.py - Performs node subprocesses recursively.<br />
+Node.py - Subprocess for each node in graphical algorithm. <br />
+Front.py - Contains Front object which stores main front, back, and query lists.<br />
+Map_Features.py - Preps contour map: initializes obstacles, impedances.<br />
+Results.py - Plots results.<br />
+contour_maps.py - Contains contour maps.
+
+
+
