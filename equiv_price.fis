@@ -1,0 +1,50 @@
+[System]
+Name='equiv_price'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=6
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Stock_Price'
+Range=[-0.32 0.32]
+NumMFs=5
+MF1='VL':'trimf',[-0.48 -0.32 -0.16]
+MF2='L':'trimf',[-0.32 -0.16 0]
+MF3='M':'trimf',[-0.16 0 0.16]
+MF4='H':'trimf',[0 0.16 0.32]
+MF5='VH':'trimf',[0.16 0.32 0.48]
+
+[Input2]
+Name='TDA'
+Range=[-0.15 0.15]
+NumMFs=5
+MF1='VL':'trimf',[-0.225 -0.15 -0.075]
+MF2='L':'trimf',[-0.15 -0.075 0]
+MF3='M':'trimf',[-0.075 0 0.075]
+MF4='H':'trimf',[0 0.075 0.15]
+MF5='VH':'trimf',[0.075 0.15 0.225]
+
+[Output1]
+Name='Equivalent_Price'
+Range=[-1 1]
+NumMFs=5
+MF1='VL':'trimf',[-1.5 -1 -0.5]
+MF2='L':'trimf',[-1 -0.5 0]
+MF3='M':'trimf',[-0.5 0 0.5]
+MF4='H':'trimf',[0 0.5 1]
+MF5='VH':'trimf',[0.5 1 1.5]
+
+[Rules]
+0 -3, 3 (1) : 2
+1 3, 1 (1) : 1
+2 3, 2 (1) : 1
+4 3, 4 (1) : 1
+5 3, 5 (1) : 1
+3 0, 3 (1) : 2
