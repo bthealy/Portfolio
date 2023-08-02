@@ -1,4 +1,4 @@
-# Velodyne Lidar Real-Time Processing for Django Robot
+# Velodyne Lidar Embedded Data Decoding and Edge Detection
 
 Welcome to this repository. Here you will find robust, tested code developed to handle the data output from a Velodyne Lidar system, a professional-grade lidar used in a range of applications, including autonomous vehicles and robotics. The code was specifically designed for use on a real-time Django robot.
 
