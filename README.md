@@ -24,18 +24,21 @@ Take a peek into the workings of the Bellman-Ford path planner through these exa
 
 ### Scripts Overview
 
-- `run_bellman.py`: This is the central script that ties the entire process together. It generates the path, calculates the cost, and plots the path on the contour.
-- `bellman.py`: This script carries out the core Bellman-Ford algorithm by performing the node subprocesses recursively.
-- `Node.py`: Defines each node in the graphical algorithm and contains the subprocess for each node.
-- `Front.py`: This script handles the Front object that manages the main front, back, and query lists.
-- `Map_Features.py`: Preps the contour map by initializing obstacles and impedances.
-- `Results.py`: A script for visual delight, this plots the results of the path planner's run.
+- `run_bellman.py`: This is the central script that ties the entire process together. It generates the path, calculates the cost, and plots the path on the contour. <br />
+- `bellman.py`: This script carries out the core Bellman-Ford algorithm by performing the node subprocesses recursively.<br />
+- `Node.py`: Defines each node in the graphical algorithm and contains the subprocess for each node.<br />
+- `Front.py`: This script handles the Front object that manages the main front, back, and query lists.<br />
+- `Map_Features.py`: Preps the contour map by initializing obstacles and impedances.<br />
+- `Results.py`: A script for visual delight, this plots the results of the path planner's run.<br />
 - `contour_maps.py`: This script contains the various contour maps used for path planning.
 
-The scripts in this repository provide an insightful exploration into how classic graph algorithms can be harnessed for modern robotics and intelligent systems applications. Step in and get started with this incredible journey!
 
-## R&D
-There were two main issues I encountered while developing this code:
+## Reflections and Learnings
 
-1) Balancing the Euclidean distance vs Elevation impedance cost trade off. The amount of penalization for elevation can have drastic effects on the path chosen, and it took some time feel out the proper balance. Too much emphasis on one type of cost causes the other to be ignored.
-2) Impedance is currently only elevation change, but in many causes the elevation change is the same regardless of steepness between a few coordinates. This caused the algorithm to reduce overall elevation change, but not necessarily prioritize less-steep paths of the same Euclidean distance. This problem would be easier solved with real contours and robotic limitations (as I'm using self made contours). It's difficult to properally adjust costs without proper requirements / restrictions for the vehicle's traversibility. For example, a real vehicle may have a certain incline/decline limit that could be embedded in the cost function.
+The development process of this project was not without its hurdles. Two challenges, in particular, stood out:
+
+1) Achieving a balance between the Euclidean distance and elevation impedance cost was quite a juggling act. The path chosen by the algorithm could be significantly influenced by the penalty associated with elevation. It took a fair amount of experimentation to strike an optimal balance, as overemphasizing one type of cost would lead to the other being overlooked.
+   
+2) The current design uses only elevation change to calculate impedance, leading to scenarios where paths of the same Euclidean distance but varying steepness were treated the same. While the algorithm was able to reduce overall elevation change, it did not necessarily prioritize less-steep paths.
+
+A practical solution to these problems would be to incorporate real contours and robotic limitations. Having real-world constraints on the vehicle's traversal capabilities would provide a more concrete framework for adjusting the cost function and balancing Euclidean distance and elevation impedance.
