@@ -1,7 +1,7 @@
 # Brendan Healy's Engineering Portfolio
 Welcome to my portfolio. This platform showcases my proficiency in multiple domains of engineering, ranging from robotics, machine learning, and artificial intelligence, to computer-aided design (CAD). 
 
-**Please see individual branches for full project and certification descriptions.**
+**Please see individual branches for project and certification descriptions, visualizations, and scripts.**
 
 ## Certificates:
 - TensorFlow Advanced Techniques
