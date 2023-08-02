@@ -33,3 +33,9 @@ Take a peek into the workings of the Bellman-Ford path planner through these exa
 - `contour_maps.py`: This script contains the various contour maps used for path planning.
 
 The scripts in this repository provide an insightful exploration into how classic graph algorithms can be harnessed for modern robotics and intelligent systems applications. Step in and get started with this incredible journey!
+
+## R&D
+There were two main issues I encountered while developing this code:
+
+1) Balancing the Euclidean distance vs Elevation impedance cost trade off. The amount of penalization for elevation can have drastic effects on the path chosen, and it took some time feel out the proper balance. Too much emphasis on one type of cost causes the other to be ignored.
+2) Impedance is currently only elevation change, but in many causes the elevation change is the same regardless of steepness between a few coordinates. This caused the algorithm to reduce overall elevation change, but not necessarily prioritize less-steep paths of the same Euclidean distance. This problem would be easier solved with real contours and robotic limitations (as I'm using self made contours). It's difficult to properally adjust costs without proper requirements / restrictions for the vehicle's traversibility. For example, a real vehicle may have a certain incline/decline limit that could be embedded in the cost function.
