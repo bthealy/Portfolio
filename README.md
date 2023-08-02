@@ -1,4 +1,6 @@
 # Feature Aggregation in Deep Learning
+This library was developed to complete my Master's Thesis, which focused on Neural Network architecures for Sound Detection Res-CRNNs. It was created using TensorFlow.
+
 Feature aggregation is a deep learning architectural techinque used to improve scaling of features. It is pivotal for the robustness of object detection networks for various sensor types, as features can vary in size due to distance (in CV or lidar) or amplitude (sound waves). This architectural design also allows for dynamic prediction of variable number of objects in a sample when combined with anchors. Computer vision examples of this include YOLO and SSD, which are trained with samples of one object per sample but can simultaneous detect multiple objects of different classes.
 
 ## Weighted Averaging Layer
