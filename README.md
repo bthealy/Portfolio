@@ -1,5 +1,5 @@
 # Autonomous Vehicle
-Welcome to our autonomous vehicle project. This repository contains a straightforward, yet engaging project that we undertook as part of an undergraduate introductory course in Robotics. Our aim was to build a simple autonomous vehicle capable of traveling a specified distance along a straight path and successfully navigating within set boundaries using magnetometer headings.
+Welcome to my autonomous vehicle project; a straightforward, yet engaging project that was the focus of an undergraduate introductory course in Robotics. Our aim was to build a simple autonomous vehicle capable of traveling a specified distance then turning and navigating within set boundaries using magnetometer headings. This project was completed using C/C++.
 
 For a closer look at the project and to see our autonomous vehicle in action, feel free to check out our demonstration video via the link provided below:
 
