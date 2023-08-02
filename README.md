@@ -17,7 +17,7 @@ Design a fuzzy trading with 3 inputs and one output, to maximize your profit (or
 Write a short report (2-3 pages) about your work.  In this report indicate how you solved the problem, reasoning behind your solutions, results and discussion of findings and conclusions.  In your report show plots of the number of shares bought/sold, daily profit/loss and accumulated profit/loss as a function of days.
 
 ## Solution
-See Report.pdf
-https://github.com/bthealy/Portfolio/blob/main/Report.pdf
-
 This solution was completed using MATLAB's Fuzzy Logic Toolbox.
+
+Report.pdf https://github.com/bthealy/Portfolio/blob/main/Report.pdf
+Main Script https://github.com/bthealy/Portfolio/blob/main/stock_market_fuzzy.m
