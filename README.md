@@ -1,4 +1,4 @@
-# Adaptive Path Planning using Bellman-Ford Algorithm
+Bellman-Ford Path Planner
 
 Welcome to this demonstration of combining classical graph theory with robotics and intelligent systems, creating a robust path planner leveraging the Bellman-Ford algorithm. This project uses a contour map (in numpy array format) and navigates it with precise start, end, and obstacle coordinates. 
 
