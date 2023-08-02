@@ -11,10 +11,10 @@ class GA():
         self.k_range = list(range(2, 6))
         self.pool_range = [3, 4, 5]
 
-        # Upper limit for number of convolutions
+        # Upper limit for number of dense layers
         self.d_range = 1
 
-        # Range for number of perceptrons, dropout values
+        # Range for layer sizes, dropout values
         self.dense_range = list(range(4, 16, 2))
         self.drop_range = [x / 100 for x in range(20, 51, 2)]
 
