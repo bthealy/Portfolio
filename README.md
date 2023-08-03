@@ -26,13 +26,13 @@ Chromosomes contain genes, which are the individual values for each detail of th
 
 chromosome = [f, k, p, d, dr, fitness]
 
-Genes:
-f - list of filter values for each convolution
-k - list of kernel values for each convolution
-p - list of pooling values for each pooling layer
-d - list of number of neurons in each dense layer
-dr - list of dropout values for each dropout layer
-fitness - best validation loss for this chromosome's architecture (outliers removed)
+Genes: <br />
+f - list of filter values for each convolution <br />
+k - list of kernel values for each convolution <br />
+p - list of pooling values for each pooling layer <br />
+d - list of number of neurons in each dense layer <br />
+dr - list of dropout values for each dropout layer <br />
+fitness - best validation loss for this chromosome's architecture (outliers removed) <br /> <br />
 
 Each gene is initialized to be a random length within a specified range. For example, if we want there to be up to 5 convolutional layers, each f will be a list of filter values that is no greater than 5 (and k will be that same length). Chromosomes will vary in their length of f and k, causing the number of convolutions to differ for each chromosome. This allows the algorithm to optimize both architecture and hyperparameter values.
 
