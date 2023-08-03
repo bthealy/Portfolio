@@ -19,5 +19,5 @@ Write a short report (2-3 pages) about your work.  In this report indicate how y
 ## Solution
 This solution was completed using MATLAB's Fuzzy Logic Toolbox.
 
-Report.pdf https://github.com/bthealy/Portfolio/blob/main/Report.pdf <br />
-Main Script https://github.com/bthealy/Portfolio/blob/main/stock_market_fuzzy.m
+Report.pdf  https://github.com/bthealy/Portfolio/blob/Fuzzy-Logic-Stock-Market-Investor/Report.pdf <br />
+Main Script https://github.com/bthealy/Portfolio/blob/Fuzzy-Logic-Stock-Market-Investor/stock_market_fuzzy.m
